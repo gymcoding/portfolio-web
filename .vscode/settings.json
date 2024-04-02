@@ -1,0 +1,5 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // prettier를 기본 포맷터로 지정
+  "editor.formatOnSave": true, // 파일을 저장할 때마다 포매팅 실행
+  "editor.tabSize": 2 // 탭을 2개의 공백 문자로 표기
+}
