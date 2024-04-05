@@ -53,7 +53,7 @@
     </header>
     <main>
       <!-- Home -->
-      <section class="home container" id="home">
+      <section class="home container section" id="home">
         <!-- Home Data -->
         <div class="home__data">
           <h2 class="home__title">
@@ -101,37 +101,41 @@
       </section>
 
       <!-- About -->
-      <section id="about">
-        <h2>About</h2>
+      <section class="about section bg-grey-1" id="about">
+        <h2 class="section__title">About</h2>
 
-        <div>
+        <div class="about__container container">
           <!-- 이미지 -->
-          <div>
-            <img src="./images/about/about.jpg" alt="짐코딩 이미지" />
-          </div>
+          <img
+            class="about__img"
+            src="./images/about/about.jpg"
+            alt="짐코딩 이미지"
+          />
           <!-- 문자열 -->
-          <h3>저는 이렇게 답합니다</h3>
-          <p>
-            프로그래밍을 배우는 사람의 마음을 너무 잘 압니다. 저도 여러분과
-            똑같은 입장이었던 적이 있기 때문입니다. 개발자로 취업 후 1년 정도
-            다니고 퇴사를 결심한 적이 있습니다. 왜냐하면 프로그래밍을 잘 모르고
-            취업했기 때문입니다.
-            <br /><br />
-            퇴사 후 학원에 다니며 하루 4시간 자면서 열심히 살았습니다. 과거로
-            돌아가도 그때처럼 공부할 자신이 없을 정도니까요. 그리고 현재 저는
-            인프런과 유튜브에서 웹 개발 입문자와 실무자들을 위한 웹 개발 지식을
-            공유하고 있습니다.
-            <br /><br />
-            제 강의는 제가 프로그래밍을 잘 알지 못했던 시절과 개발자로서
-            지식공유를 하며 어려움을 겪었던 분들의 입장에서 이해하기 쉽고,
-            현업에서도 꿀리지 않도록 알차게 구성한 강의입니다.
-          </p>
+          <div class="about__data">
+            <h3 class="about__subtitle">저는 이렇게 답합니다</h3>
+            <p class="about__text">
+              프로그래밍을 배우는 사람의 마음을 너무 잘 압니다. 저도 여러분과
+              똑같은 입장이었던 적이 있기 때문입니다. 개발자로 취업 후 1년 정도
+              다니고 퇴사를 결심한 적이 있습니다. 왜냐하면 프로그래밍을 잘
+              모르고 취업했기 때문입니다.
+              <br /><br />
+              퇴사 후 학원에 다니며 하루 4시간 자면서 열심히 살았습니다. 과거로
+              돌아가도 그때처럼 공부할 자신이 없을 정도니까요. 그리고 현재 저는
+              인프런과 유튜브에서 웹 개발 입문자와 실무자들을 위한 웹 개발
+              지식을 공유하고 있습니다.
+              <br /><br />
+              제 강의는 제가 프로그래밍을 잘 알지 못했던 시절과 개발자로서
+              지식공유를 하며 어려움을 겪었던 분들의 입장에서 이해하기 쉽고,
+              현업에서도 꿀리지 않도록 알차게 구성한 강의입니다.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Skills -->
-      <section id="skills">
-        <h2>Skills</h2>
+      <section class="section" id="skills">
+        <h2 class="section__title">Skills</h2>
 
         <div>
           <!-- 스킬 데이터 -->
@@ -211,8 +215,8 @@
       </section>
 
       <!-- Work -->
-      <section id="work">
-        <h2>Work</h2>
+      <section class="section" id="work">
+        <h2 class="section__title">Work</h2>
         <div>
           <a
             href="https://www.gymcoding.co/courses/frontend-fly"
@@ -280,8 +284,8 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact">
-        <h2>Contact</h2>
+      <section class="section" id="contact">
+        <h2 class="section__title">Contact</h2>
 
         <div>
           <form>
