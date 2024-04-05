@@ -12,7 +12,7 @@
   --red-color: #b71c1c;
 
   /* Brand Colors */
-  --primary-color: var(--color-blue);
+  --primary-color: var(--blue-color);
   --secondary-color: #26a69a;
   --accent-color: #9c27b0;
   --positive-color: #21ba45;
@@ -62,4 +62,67 @@ body {
 
 .font-weight-black {
   font-weight: var(--font-weight-black);
+}
+
+/* Layout */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-1);
+}
+
+/* Header */
+.header {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-weight-black);
+  height: 4.5rem;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__img {
+  width: 42px;
+  height: 42px;
+}
+
+.nav__brand {
+  font-size: var(--font-size-4);
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-left: var(--spacing-3);
+}
+
+.nav__link {
+  position: relative;
+}
+
+.active-link::after,
+.nav__link:hover::after {
+  background-color: var(--primary-color);
+  height: 0.18rem;
+  content: '';
+  width: 100%;
+  left: 0;
+  top: 2rem;
+  position: absolute;
 }
