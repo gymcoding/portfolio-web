@@ -294,6 +294,7 @@ body {
   border-radius: 0.5rem;
 }
 
+/* Work */
 .work__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
