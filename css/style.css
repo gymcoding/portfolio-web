@@ -229,3 +229,66 @@ body {
   max-width: 310px;
   border-radius: 0.5rem;
 }
+
+/* Skills */
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  align-items: center;
+}
+.skills__subtitle {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacing-1);
+}
+.skills__text {
+  line-height: 1.4rem;
+}
+.skills__data {
+  box-shadow: var(--box-shadow-1);
+  border-radius: 0.3rem;
+  margin-top: var(--spacing-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.8rem 1rem;
+  font-weight: var(--font-weight-bold);
+  overflow: hidden;
+  cursor: default;
+}
+.skills__names {
+  display: flex;
+  align-items: center;
+}
+.skills__icon {
+  font-size: var(--font-size-4);
+  margin-right: var(--spacing-2);
+  color: var(--primary-color);
+}
+.skills__progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  appearance: none;
+  height: 6px;
+  width: 100%;
+}
+
+.skills__progress::-webkit-progress-bar {
+  background: var(--white-color);
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills__progress::-webkit-progress-value {
+  background: var(--primary-color);
+  border-radius: 12px;
+  width: 48px;
+}
+.skills__img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
