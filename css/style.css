@@ -41,11 +41,17 @@
   --spacing-3: 2.5rem;
   --spacing-4: 3rem;
   --spacing-5: 4rem;
+
+  --header-height: 4.5rem;
+
+  --box-shadow-1: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --box-shadow-2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 body {
   font-family: var(--body-font);
   color: var(--black-color);
   font-size: var(--font-size-5);
+  margin-top: var(--header-height);
 }
 
 .font-weight-light {
@@ -86,7 +92,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-weight-black);
-  height: 4.5rem;
+  height: var(--header-height);
 }
 
 .nav__logo {
@@ -125,4 +131,53 @@ body {
   left: 0;
   top: 2rem;
   position: absolute;
+}
+
+/* Home */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-5) 0;
+}
+
+.home__title {
+  font-size: var(--font-size-2);
+  line-height: calc(var(--font-size-2) * 1.4);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacing-3);
+}
+
+.home__title-color {
+  color: var(--primary-color);
+}
+.home__img {
+  border-radius: 2rem;
+  width: 480px;
+}
+.home__social {
+  margin-top: var(--spacing-3);
+  display: flex;
+  column-gap: var(--spacing-1);
+}
+.home__social-icon {
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.home__social-icon:hover {
+  color: var(--primary-color);
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  font-weight: var(--font-weight-bold);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: var(--box-shadow-2);
 }

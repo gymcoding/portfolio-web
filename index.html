@@ -53,24 +53,25 @@
     </header>
     <main>
       <!-- Home -->
-      <section id="home">
+      <section class="home container" id="home">
         <!-- Home Data -->
-        <div>
-          <h2>
+        <div class="home__data">
+          <h2 class="home__title">
             안녕하세요! <br />
-            <strong>코딩 교육 크리에이터</strong> <br />
-            <strong>짐코딩</strong>입니다!
+            <strong class="home__title-color">코딩 교육 크리에이터</strong>
+            <br />
+            <strong class="home__title-color">짐코딩</strong>입니다!
           </h2>
 
-          <a href="#contact">Contact</a>
+          <a href="#contact" class="button">Contact</a>
 
-          <div>
+          <div class="home__social">
             <a
               href="https://www.youtube.com/@gymcoding"
               target="_blank"
               title="짐코딩 유튜브 링크"
             >
-              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-youtube home__social-icon"></i>
             </a>
 
             <a
@@ -78,7 +79,7 @@
               target="_blank"
               title="짐코딩 인스타그램 링크"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram home__social-icon"></i>
             </a>
 
             <a
@@ -86,15 +87,17 @@
               target="_blank"
               title="짐코딩 깃헙 링크"
             >
-              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-github home__social-icon"></i>
             </a>
           </div>
         </div>
 
         <!-- Home Image -->
-        <div>
-          <img src="./images/home/profile.gif" alt="짐코딩 프로필 이미지" />
-        </div>
+        <img
+          class="home__img"
+          src="./images/home/profile.gif"
+          alt="짐코딩 프로필 이미지"
+        />
       </section>
 
       <!-- About -->
