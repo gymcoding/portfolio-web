@@ -315,3 +315,29 @@ body {
 .work__img:hover {
   transform: scale(1.05);
 }
+
+/* Contact */
+.contact__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  width: 360px;
+}
+
+.contact__input {
+  width: 100%;
+  outline: none;
+  border: 1.5px solid var(--dark-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: var(--spacing-1);
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-bold);
+}
+
+.contact__button {
+  margin-left: auto;
+  display: block;
+}
