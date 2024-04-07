@@ -436,4 +436,45 @@ body {
     margin-left: 0;
     margin-bottom: var(--spacing-4);
   }
+
+  /* Home  */
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .home__title {
+    margin-top: var(--spacing-3);
+  }
+  .home__social {
+    justify-content: center;
+  }
+
+  /* Section */
+  .section__title::after {
+    height: 0.2rem;
+    top: 2.5rem;
+  }
+
+  /* About */
+  .about__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__subtitle {
+    margin-top: var(--spacing-2);
+  }
+
+  /* Skills */
+  .skills__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  /* Work */
+  .work__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
