@@ -40,3 +40,14 @@ $sectionList.forEach((el) => observer.observe(el));
 // observer.observe($workSection);
 // observer.observe($workSection);
 // observer.observe($workSection);
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+  delay: 200,
+});
+scrollReveal.reveal('.home__data, .about__img, .skills__text');
+scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
+scrollReveal.reveal('.skills__data, .work__link, .contact__input', {
+  interval: 200,
+});
