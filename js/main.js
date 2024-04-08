@@ -2,6 +2,17 @@ function toggleMenu() {
   const $navMenu = document.getElementById('nav__menu');
   $navMenu.classList.toggle('show');
 }
+
+function handleFloatingButton() {
+  const $floatingButton = document.getElementById('floating-button');
+  $floatingButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth',
+    });
+  });
+}
+
 function init() {
   const $navToggle = document.getElementById('nav-toggle');
   $navToggle.addEventListener('click', () => {
@@ -11,6 +22,8 @@ function init() {
 
   const $navLinkList = document.querySelectorAll('.nav__link ');
   $navLinkList.forEach((el) => el.addEventListener('click', toggleMenu));
+
+  handleFloatingButton();
 }
 
 init();

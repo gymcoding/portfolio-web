@@ -47,6 +47,9 @@
   --box-shadow-1: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   --box-shadow-2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--body-font);
   color: var(--black-color);
