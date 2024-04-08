@@ -64,3 +64,17 @@ scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
 scrollReveal.reveal('.skills__data, .work__link, .contact__input', {
   interval: 200,
 });
+
+const typeit = new TypeIt('#typeit', {
+  speed: 70,
+  startDelay: 1300,
+  waitUntilVisible: true,
+});
+
+typeit
+  .type('안녕하세요!<br/>')
+  .type('<strong class="home__title-color">코딩 교육 크리에이터</strong><br/>')
+  .type('<strong class="home__title-color">GYMCODING</strong>', { delay: 300 })
+  .delete(9, { delay: 300 })
+  .type('<strong class="home__title-color">짐코딩</strong>입니다!')
+  .go();
