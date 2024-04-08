@@ -211,6 +211,9 @@ body {
 .bg-grey-1 {
   background-color: #f6f6f6;
 }
+.bg-dark {
+  background-color: var(--dark-color);
+}
 
 /* About */
 .about__container {
