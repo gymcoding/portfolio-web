@@ -54,7 +54,7 @@ body {
   font-family: var(--body-font);
   color: var(--black-color);
   font-size: var(--font-size-5);
-  margin-top: var(--header-height);
+  margin-top: calc(var(--header-height) + 40px);
 }
 
 .font-weight-light {
@@ -89,6 +89,22 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
+}
+.header__notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 0 16px;
+  font-size: 12px;
+}
+.header__link {
+  margin-left: var(--spacing-1);
+  text-decoration: underline;
+  color: var(--blue-color);
+  cursor: pointer;
 }
 
 .nav {
@@ -419,6 +435,10 @@ body {
     --font-size-6: 0.75em;
 
     --header-height: 3rem;
+  }
+  .header__notice {
+    flex-direction: column;
+    row-gap: 2px;
   }
   .nav__toggle {
     display: block;
