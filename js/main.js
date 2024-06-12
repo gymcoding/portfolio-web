@@ -78,3 +78,25 @@ typeit
   .delete(9, { delay: 300 })
   .type('<strong class="home__title-color">짐코딩</strong>입니다!')
   .go();
+
+// 이메일 클라이언트 열기
+const $contactForm = document.getElementById('contactForm');
+
+$contactForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // 폼 하위 정보를 갖고!
+  const name = $contactForm.name.value;
+  const subject = $contactForm.subject.value;
+  const message = $contactForm.message.value;
+  const to = 'bruce.lean17@gmail.com';
+
+  // 이메일 클라이언트를 열기!
+  location.href = 
+  'mailto:' + 
+  encodeURIComponent(to) +
+  '?subject=' +
+  encodeURIComponent(`[${name}님 문의] ${subject}`) +
+  '&body=' +
+  encodeURIComponent(message);
+});
